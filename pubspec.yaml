@@ -1,0 +1,55 @@
+name: dastak
+description: "A residential and event QR access control app."
+publish_to: 'none'
+version: 2.0.0+2
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Core & UI
+  cupertino_icons: ^1.0.8
+  
+  # Backend & Auth
+  supabase_flutter: ^2.8.0
+  shared_preferences: ^2.3.2
+  
+  # Media & Scanning
+  image_picker: ^1.1.2
+  flutter_image_compress: ^2.3.0
+  mobile_scanner: ^5.2.3
+  qr_flutter: ^4.1.0
+  
+  # Utilities
+  share_plus: ^10.1.4
+  url_launcher: ^6.3.1
+  path_provider: ^2.1.5
+  
+  # V2 Features
+  file_picker: ^8.1.2
+  flutter_contacts: ^1.1.9+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+# ============================================================================
+# APP ICON CONFIGURATION
+# ============================================================================
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21 
+  
+  # Adaptive icon for modern Android devices (circle/squircle shapes)
+  adaptive_icon_background: "#FF5E3A" # Dastak's Coral/Orange brand color
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
